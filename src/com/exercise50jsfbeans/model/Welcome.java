@@ -11,7 +11,7 @@ public class Welcome {
 		public String welcomeMenssage;
 
 	public String getWelcomeMenssage() {
-		return welcomeMenssage ="holo vgaa";
+		return welcomeMenssage ="holo desde el getter";
 	}
 
 	public void setWelcomeMenssage(String welcomeMenssage) {

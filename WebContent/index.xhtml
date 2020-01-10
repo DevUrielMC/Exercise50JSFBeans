@@ -8,6 +8,8 @@
 <h:head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>Insert title here</title>
+<h:outputStylesheet library="css" name="bootstrap.min.css"></h:outputStylesheet>
+<h:outputStylesheet library="css" name="style.css"></h:outputStylesheet>
 </h:head>
 <h:body>
 	
@@ -19,12 +21,29 @@
 		 
 		
 		<br></br>
+		<h:form>
 		<h3><h:outputText value="Práctica 3 Sum of thow numbers"></h:outputText></h3>
-		<h2><h:outputText value="#{mimensajitu1.sumaNumeros(5,5)}"></h:outputText></h2>
-		
+		<h:outputLabel value="Number 1: "></h:outputLabel>
+		<p>
+		<h:inputText id="number1" value="#{maths.number1}" label="Number 1: "></h:inputText>
+		</p>
+		<h:outputLabel value="Number 2: "></h:outputLabel>
+		<p>
+		<h:inputText id="number2" value="#{maths.number2}" label="Number 2: "></h:inputText>
+		</p>
+		<p>
+		<h:commandButton value="Add numbers" type="submit"></h:commandButton>	
+		</p>
+		<p>
+		<h:outputText value="#{maths.result}"></h:outputText>
+		</p>
 		<h3><h:outputText value="Práctica 4 jsf with getters and setters"></h:outputText></h3>
 		<h2><h:outputText value="#{welcomeBean.welcomeMenssage}"></h:outputText></h2>
-		
+		</h:form>
 	
+	<h:outputScript library="js" name="jquery-3.4.1.min.js"></h:outputScript>
+	<h:outputScript library="js" name="bootstrap.min.js"></h:outputScript>
+	<h:outputScript library="js" name="popper.min.js"></h:outputScript>
+	<h:outputScript library="js" name="script.js"></h:outputScript>
 </h:body>
 </html>
